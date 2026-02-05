@@ -24,13 +24,13 @@ macOS automatically generates metadata files (starting with `._`) on non-HFS+ vo
 3. **Clean** the repository of these artifacts.
 
 ## Quick Reference
-1. Run the audit script: `python3 .agent/skills/deployment-audit/scripts/audit.py`
+1. Run the audit script: `node .agent/skills/deployment-audit/scripts/audit.js`
 2. Review the report.
 3. If issues found, run with `--fix` (if implemented) or manually git rm the offenders.
 
 ## Implementation
 
-See `scripts/audit.py` for the automated checker.
+See `scripts/audit.js` for the automated checker.
 
 ## Common Mistakes
 - Committing `node_modules` (detected by size/count, usually).
